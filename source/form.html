@@ -6,31 +6,33 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__header">
+        <a class="page-header__logo logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__item--current" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main class="page-main">
-      <h2 class="caption">Вязание на заказ</h1>
+    <main class="page-content">
+      <h2 class="page-content__title">Вязание на заказ</h2>
     </main>
     <footer class="page-footer">
       <div class="page-footer__social social">
@@ -51,3 +53,5 @@
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+  </body>
+</html>
