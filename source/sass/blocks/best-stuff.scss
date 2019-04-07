@@ -1,0 +1,49 @@
+.best-stuff__title {
+  font-size: $font-size-h2;
+  line-height: $line-height-title;
+  color: $title-color;
+}
+
+.best-stuff__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  color: $seafoam-blue;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.best-stuff__text {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+}
+
+.best-stuff__field {
+  font-size: $font-size-base;
+  color: $text-color;
+  line-height: 20px;
+}
+
+.best-stuff__value {
+  font-size: $font-size-base;
+  color: $text-color;
+  line-height: 20px;
+}
+
+.best-stuff__price {
+  color: $text-color;
+  font-size: 17px;
+  line-height: $line-height-base;
+}
+
+.best-stuff__btn {
+  font-size: 17px;
+  line-height: 20px;
+  background-color: $bg-base;
+  border: solid 2px;
+  border-color: $text-color;
+  width: 259px;
+  height: 52px;
+  color: $text-color;
+  text-transform: uppercase;
+}

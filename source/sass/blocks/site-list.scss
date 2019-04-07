@@ -1,0 +1,21 @@
+.site-list {
+  list-style: none;
+  background-color: $bg-base;
+  cursor: pointer;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: $title-color;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.site-list__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+}

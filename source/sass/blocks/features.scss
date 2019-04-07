@@ -1,0 +1,41 @@
+.page-content__inner {
+  padding-top: 76px;
+  padding-bottom: 74px;
+  background-color: $secondary-color;
+  width: 100%;
+}
+
+.page-content__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.features__inner {
+  margin: 0;
+  padding: 30px 0 0;
+}
+
+.features__list {
+  list-style: none;
+}
+
+.features__heading {
+  font-size: 17px;
+  line-height: $line-height-base;
+  color: $title-color;
+}
+
+.features__desc {
+  font-size: 13px;
+  line-height: 2.31;
+  color: $text-color;
+}
+
+.features__price {
+  font-size: $font-size-base;
+  line-height: 16px;
+  color: $title-color;
+  font-weight: bold;
+}
