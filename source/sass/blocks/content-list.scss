@@ -12,16 +12,18 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
-    &--interior {
-      background-color: $seafoam-blue;
-      min-height: 103px;
-      width: 100%;
-      display: inline-block;
-    }
-    &--toy {
-      background-color: $greeny-blue;
-      min-height: 103px;
-      width: 100%;
-      display: inline-block;
-    }
+
+  &--interior {
+    background-color: $seafoam-blue;
+    min-height: 103px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  &--toy {
+    background-color: $greeny-blue;
+    min-height: 103px;
+    width: 100%;
+    display: inline-block;
+  }
 }
