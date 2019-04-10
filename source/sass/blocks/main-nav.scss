@@ -1,0 +1,20 @@
+.main-nav {
+  display: flex;
+  height: 316px;
+}
+
+.main-nav__toggle {
+  cursor: pointer;
+  position: absolute;
+  background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 20px;
+  border: none;
+  top: 29px;
+  right: 30px;
+}
+
+.main-nav__wrapper {
+  width: 100%;
+}

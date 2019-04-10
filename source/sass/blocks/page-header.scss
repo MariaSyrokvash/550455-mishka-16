@@ -1,0 +1,19 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__header {
+  position: relative;
+}
+
+.page-header__logo {
+  height: 79px;
+  display: block;
+}
+
+.page-header__logo-image {
+  display: block;
+  margin: 0 auto;
+  padding-top: 22px;
+}

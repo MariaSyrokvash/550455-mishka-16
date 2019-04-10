@@ -1,0 +1,21 @@
+.reviews {
+  height: 620px;
+}
+
+.reviews__title {
+  margin: 0;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+
+.reviews__item {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 25px;
+}
+
+.rewiews__text {
+  font-size: $font-size-base;
+  line-height: 2;
+}
