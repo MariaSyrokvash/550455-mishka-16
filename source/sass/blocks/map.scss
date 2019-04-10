@@ -1,3 +1,14 @@
 .map {
-  margin: 0 auto;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 322px;
+  height: 300px;
+  display: block;
+}
+
+.contacts__write {
+  height: 108px;
+  display: block;
+  margin-bottom: 30px;
 }

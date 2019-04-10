@@ -2,6 +2,8 @@
   list-style: none;
   background-color: $bg-base;
   cursor: pointer;
+  margin: 0;
+  padding-left: 76px;
 }
 
 .site-list__link {
@@ -15,7 +17,6 @@
 .site-list__item {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 35px;
+  justify-content: center;
+  height: 79px;
 }

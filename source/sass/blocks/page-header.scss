@@ -1,15 +1,19 @@
 .page-header {
-  min-height: 79px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__header {
+  position: relative;
 }
 
 .page-header__logo {
+  height: 79px;
   display: block;
-  margin-top: 22px;
 }
 
 .page-header__logo-image {
   display: block;
   margin: 0 auto;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  padding-top: 22px;
 }
