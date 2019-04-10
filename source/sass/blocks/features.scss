@@ -16,7 +16,7 @@
   margin-bottom: 45px;
 }
 
-.features__item--pic {
+.features__item-pic {
   display: block;
   margin: 0 auto;
 }
@@ -37,9 +37,12 @@
 }
 
 .features__heading--toy {
-  padding-right: 60px;
-  padding-left: 59px;
   margin-bottom: 6px;
+  padding-left: 28px;
+}
+
+.features__description--toy {
+  width: 260px;
 }
 
 .features__desc {
@@ -49,10 +52,6 @@
   margin: 0;
   padding-left: 29px;
   margin-bottom: 31px;
-}
-
-.features__desc--toy {
-  padding-left: 59px;
 }
 
 .features__footer {
@@ -68,15 +67,7 @@
   padding-left: 28px;
 }
 
-.features__price--toy {
-  padding-left: 59px;
-}
-
 .features__btn {
   border: none;
   padding-right: 27px;
-}
-
-.features__btn--toy {
-  padding-right: 56px;
 }
