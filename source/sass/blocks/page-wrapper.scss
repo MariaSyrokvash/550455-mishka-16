@@ -1,7 +1,19 @@
 .page-wrapper {
-  max-width: 320px;
+  min-width: 320px;
   font-family: $font-stack;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-wrapper {
+    width: 1150px;
+  }
 }
 
 .visually-hidden {

@@ -20,3 +20,37 @@
   justify-content: center;
   height: 79px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav-extra {
+    display: none;
+  }
+
+  .site-list {
+    background: none;
+  }
+
+  .site-list__item {
+    height: 88px;
+    margin-right: 12px;
+  }
+
+  .nav-top {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    padding: 0;
+  }
+
+  .nav-bottom {
+    display: flex;
+    order: 3;
+    padding-left: 0;
+    width: auto;
+  }
+}
+
+
+// @media (min-width: $desktop-width) {
+
+// }
