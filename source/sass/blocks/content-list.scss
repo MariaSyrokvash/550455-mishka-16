@@ -36,3 +36,17 @@
     background-position: 87% 50%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .content-list {
+    display: flex;
+    margin-top: 371px;
+    min-width: 663px;
+  }
+
+  .content-list__item {
+    display: flex;
+    width: 50%;
+    height: 119px;
+  }
+}

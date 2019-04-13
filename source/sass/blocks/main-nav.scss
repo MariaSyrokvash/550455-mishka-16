@@ -1,12 +1,9 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  height: 395px;
   border: 1px solid green;
-}
-
-.main-nav-extra {
-  display: none;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-nav__toggle {
@@ -24,61 +21,118 @@
 .main-nav__wrapper {
   width: 100%;
   border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  list-style: none;
+  background-color: $bg-base;
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 76px;
+  width: 100%;
+}
+
+.main-nav__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 79px;
+  border: 1px solid slateblue;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $title-color;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.main-nav__list--extra {
+  display: none;
 }
 
 .main-nav__text {
   display: none;
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.main-nav__list--top {
+  border: 1px solid fuchsia;
+}
+
+.main-nav__list--bottom {
+  border: 1px solid powderblue;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
     border: 1px solid salmon;
-    height: 88px;
-    padding: 0 51px;
-  }
-
-  .main-nav__wrapper {
-    display: flex;
+    min-height: 88px;
     flex-direction: row;
-    flex-wrap: wrap;
-    position: absolute;
-    left: 0;
-    top: 88px;
+    width: 100%;
   }
 
   .main-nav__toggle {
     display: none;
   }
 
-  .main-nav-extra {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    background: none;
+  }
+
+  .main-nav__text {
+    // display: block;
+  }
+
+  .main-nav__list--extra {
     display: none;
   }
 
-  .nav-top {
-    display: flex;
+  .main-nav__item {
+    height: 88px;
     flex-direction: row;
-    order: 2;
-    padding: 0;
-    position: absolute;
-    right: 52px;
+    align-items: center;
   }
 
-  .nav-bottom {
+  .main-nav__list--top {
     display: flex;
-    width: 320px;
+    justify-content: flex-end;
+    order: 2;
+    padding: 0;
+  }
+
+  .main-nav__list--bottom {
+    display: flex;
+    flex-direction: row;
     order: 3;
+    padding-left: 0;
   }
 }
 
-
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .main-nav__list--extra {
+    display: flex;
+    flex-direction: row;
+    order: 4;
+    padding-left: 0;
+  }
+}

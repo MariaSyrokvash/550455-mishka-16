@@ -15,3 +15,36 @@
   padding-top: 72px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    margin-bottom: 55px;
+  }
+
+  .promo__inner {
+    min-width: 668px;
+    height: 662px;
+    border: 1px solid blue;
+    margin: 0 auto;
+  }
+
+  .promo-caption {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__inner {
+    width: 1050px;
+    height: 680px;
+    border: 1px solid blue;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  .promo-caption {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
