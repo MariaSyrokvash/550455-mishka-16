@@ -18,7 +18,7 @@
   }
 
   .page-footer__logo {
-    display: block;
+    flex-basis: 149px;
   }
 
   .copyright {
@@ -29,5 +29,18 @@
   .page-footer__copyright.copyright.container {
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__inner.container {
+    width: 1150px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    display: flex;
+    flex-basis: 149px;
   }
 }

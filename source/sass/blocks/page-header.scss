@@ -27,11 +27,13 @@
 @media (min-width: $tablet-width) {
   .page-header__inner.container {
     padding: 0 50px;
-    width: auto;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .logo {
-    flex-basis: 317px;
+    // flex-basis: 317px;
+    flex-basis: 310px;
     margin: 0;
     padding-top: 22px;
   }
@@ -43,7 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header__inner.container {
-    width: 1050px;
+    width: 1150px;
     padding: 0 50px;
     margin: 0 auto;
   }
@@ -53,8 +55,13 @@
     margin: 0 auto;
   }
 
+  .logo__image {
+    margin: 0 auto;
+    display: block;
+  }
+
   .container {
-    width: 1050px;
+    width: 1150px;
     padding: 0 50px;
     margin: 0 auto;
   }

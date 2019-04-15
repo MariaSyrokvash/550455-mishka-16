@@ -82,3 +82,21 @@
     display: flex;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features__inner.container {
+    width: 1150px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .features__list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .features__item {
+    flex-direction: column;
+    flex-basis: 316px;
+  }
+}

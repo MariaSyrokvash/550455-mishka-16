@@ -1,7 +1,6 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  // background-color: aqua;
 }
 
 .main-nav__toggle {
@@ -15,14 +14,6 @@
   border: none;
   top: 29px;
   right: 30px;
-}
-
-.main-nav__list {
-  // list-style: none;
-  // padding: 0;
-  // margin: 0;
-  // background-color: $bg-base;
-  // cursor: pointer;
 }
 
 .main-nav__item {

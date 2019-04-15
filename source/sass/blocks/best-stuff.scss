@@ -1,8 +1,3 @@
-// .best-stuff__inner.container {
-//   padding: 0;
-//   margin: 0;
-//   width: auto;
-// }
 .best-stuff__inner.container {
   width: auto;
 }
@@ -132,5 +127,35 @@
   .best-stuff__title {
     font-size: 43px;
     line-height: 1.16;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .best-stuff__inner.container {
+    width: 1150px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .best-stuff__heading {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .best-stuff__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  .best-stuff__subtitle {
+    margin-right: 107px;
+  }
+
+  .best-stuff__dsc {
+    margin-left: 250px;
+  }
+
+  .best-stuff__order {
+    margin-left: 235px;
   }
 }

@@ -48,12 +48,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo__inner {
-    width: 1050px;
-    height: 680px;
+  .promo__inner.container {
+    width: 1150px;
+    padding: 0 50px;
     margin: 0 auto;
-    margin-bottom: 55px;
   }
+  // .promo__inner {
+  //   width: 1050px;
+  //   height: 680px;
+  //   margin: 0 auto;
+  //   margin-bottom: 55px;
+  // }
 
   .promo-caption {
     font-size: 53px;
