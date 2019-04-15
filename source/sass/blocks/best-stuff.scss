@@ -1,10 +1,18 @@
+// .best-stuff__inner.container {
+//   padding: 0;
+//   margin: 0;
+//   width: auto;
+// }
+.best-stuff__inner.container {
+  width: auto;
+}
+
 .best-stuff__title {
   font-size: $font-size-h2;
   line-height: $line-height-title;
   color: $title-color;
   margin: 0;
   margin-bottom: 4px;
-  padding-left: 32px;
   padding-top: 27px;
 }
 
@@ -16,7 +24,6 @@
   font-weight: bold;
   margin: 0;
   margin-bottom: 23px;
-  padding-left: 30px;
 }
 
 .best-stuff__text {
@@ -25,26 +32,35 @@
   color: $text-color;
   margin: 0;
   margin-bottom: 23px;
-  padding-left: 31px;
   padding-right: 40px;
 }
 
 .best-stuff__list {
-  height: 143px;
-  display: block;
-  padding-left: 27px;
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.best-stuff__row {
+  border-collapse: collapse;
+  min-width: 101px;
 }
 
 .best-stuff__field {
   font-size: $font-size-base;
   color: $text-color;
   line-height: 20px;
+  padding: 7px 0 11px;
+  border-bottom: 1px solid $secondary-color;
 }
 
 .best-stuff__value {
   font-size: $font-size-base;
   color: $text-color;
   line-height: 20px;
+  border-bottom: 1px solid $secondary-color;
+  padding: 7px 0 11px;
 }
 
 .best-stuff__pic {
@@ -58,8 +74,8 @@
   font-size: 17px;
   line-height: $line-height-base;
   font-weight: bold;
-  padding-left: 97px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .best-stuff__btn {
@@ -68,10 +84,53 @@
   background-color: $bg-base;
   border: solid 2px;
   border-color: $text-color;
-  width: 259px;
-  height: 52px;
   color: $text-color;
   text-transform: uppercase;
   margin: 0 auto;
   display: block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+@media (min-width: $tablet-width) {
+  .best-stuff__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .best-stuff__heading {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .best-stuff__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .best-stuff__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .best-stuff__dsc {
+    flex-direction: column;
+    flex-basis: 292px;
+  }
+
+  .best-stuff__order {
+    width: 292px;
+  }
+
+  .best-stuff__title {
+    font-size: 43px;
+    line-height: 1.16;
+  }
 }

@@ -1,4 +1,33 @@
 .page-footer {
   background-color: #f1f1f1;
-  height: 160px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    min-height: 143px;
+    padding: 44px 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .copyright {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__copyright.copyright.container {
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -1,5 +1,5 @@
 .features__inner {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .features__list {
@@ -70,4 +70,15 @@
 .features__btn {
   border: none;
   padding-right: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__inner.container {
+    width: auto;
+    padding: 0 50px;
+  }
+
+  .features__item {
+    display: flex;
+  }
 }
