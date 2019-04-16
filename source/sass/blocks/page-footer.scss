@@ -12,13 +12,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: auto;
     min-height: 143px;
-    padding: 44px 50px;
   }
 
   .page-footer__logo {
     flex-basis: 149px;
+    display: flex;
   }
 
   .copyright {
@@ -33,12 +32,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__inner.container {
-    width: 1150px;
-    padding: 0 50px;
-    margin: 0 auto;
-  }
-
   .page-footer__logo {
     display: flex;
     flex-basis: 149px;

@@ -1,6 +1,6 @@
-.advantages__inner.container {
-  width: auto;
-}
+// .advantages__inner.container {
+//   width: auto;
+// }
 
 .advantages__title {
   font-size: $font-size-h2;
@@ -34,12 +34,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__inner.container {
-    width: 1150px;
-    padding: 0 50px;
-    margin: 0 auto;
-  }
-
   .advantages__list {
     padding: 0;
     height: 369px;

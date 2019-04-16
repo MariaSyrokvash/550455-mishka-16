@@ -1,6 +1,9 @@
+.page-header__inner.container {
+  padding: 0;
+}
+
 .main-nav {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 .main-nav__toggle {
@@ -24,10 +27,12 @@
 }
 
 .main-nav__link {
+  position: relative;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   color: $title-color;
+  text-decoration: none;
 }
 
 .linl-icon {
@@ -57,7 +62,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__inner.container {
+    padding: 0 50px;
+  }
+
   .main-nav {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
