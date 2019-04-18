@@ -1,19 +1,36 @@
-.page-header {
-  display: flex;
-  flex-direction: column;
-}
-
-.page-header__header {
+.logo {
+  margin: 0 auto;
   position: relative;
 }
 
-.page-header__logo {
-  height: 79px;
-  display: block;
-}
-
-.page-header__logo-image {
+.logo__image {
+  position: relative;
   display: block;
   margin: 0 auto;
-  padding-top: 22px;
+  padding: 22px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    flex-basis: 310px;
+    margin: 0;
+    padding-top: 22px;
+  }
+
+  .logo__image {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    flex-basis: 149px;
+    margin: 0 auto;
+  }
+
+  .logo__image {
+    margin: 0 auto;
+    display: block;
+  }
 }

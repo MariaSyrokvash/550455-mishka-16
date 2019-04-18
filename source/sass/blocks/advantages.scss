@@ -1,9 +1,12 @@
+// .advantages__inner.container {
+//   width: auto;
+// }
+
 .advantages__title {
   font-size: $font-size-h2;
   line-height: $line-height-title;
   margin-top: 70px;
   margin-bottom: 86px;
-  padding-left: 30px;
 }
 
 .advantages__list {
@@ -13,7 +16,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-left: 30px;
   padding-right: 40px;
 }
 
@@ -29,4 +31,12 @@
 
 .advantages__item--present {
   margin-bottom: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    padding: 0;
+    height: 369px;
+    width: auto;
+  }
 }

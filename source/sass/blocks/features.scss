@@ -1,29 +1,15 @@
-.features__inner {
-  margin: 0;
-}
-
 .features__list {
   list-style: none;
-  margin: 0 auto;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .features__item {
-  display: block;
   margin-bottom: 45px;
 }
 
 .features__item-pic {
   display: block;
   margin: 0 auto;
-}
-
-.features__description {
-  display: flex;
-  flex-direction: column;
 }
 
 .features__heading {
@@ -34,15 +20,6 @@
   margin-bottom: 4px;
   padding-top: 29px;
   padding-left: 28px;
-}
-
-.features__heading--toy {
-  margin-bottom: 6px;
-  padding-left: 28px;
-}
-
-.features__description--toy {
-  width: 260px;
 }
 
 .features__desc {
@@ -70,4 +47,46 @@
 .features__btn {
   border: none;
   padding-right: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    display: flex;
+  }
+
+  .features__item-pic {
+    width: 334px;
+    height: 334px;
+  }
+
+  .features__description {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .features__item {
+    flex-direction: column;
+    flex-basis: 316px;
+  }
+
+  .features__item-pic {
+    width: 316px;
+    height: 462px;
+  }
+
+  .features__description {
+    width: 316px;
+    height: 197px;
+  }
 }
