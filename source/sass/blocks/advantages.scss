@@ -1,7 +1,3 @@
-// .advantages__inner.container {
-//   width: auto;
-// }
-
 .advantages__title {
   font-size: $font-size-h2;
   line-height: $line-height-title;
@@ -23,10 +19,19 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
+  position: relative;
 }
 
 .advantages__item:not(:last-child) {
   margin-bottom: 83px;
+}
+
+.advantages__icon {
+  position: absolute;
+  content: "";
+  fill: #63d1bb;
+  top: -54px;
+  left: 8px;
 }
 
 .advantages__item--present {
