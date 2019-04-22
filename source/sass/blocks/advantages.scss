@@ -12,7 +12,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-right: 40px;
 }
 
 .advantages__item {
@@ -20,22 +19,34 @@
   font-weight: bold;
   line-height: 20px;
   position: relative;
+  padding-top: 70px;
+  margin-bottom: 20px;
+  // outline: 1px solid;
+  background-repeat: no-repeat;
 }
 
-.advantages__item:not(:last-child) {
-  margin-bottom: 83px;
+.advantages__item--eco {
+  background-image: url("../img/icon-feature-flower.svg");
 }
 
-.advantages__icon {
-  position: absolute;
-  content: "";
-  fill: #63d1bb;
-  top: -54px;
-  left: 8px;
+.advantages__item--price {
+  background-image: url("../img/icon-feature-money.svg");
+}
+
+.advantages__item--like {
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
+.advantages__item--hand {
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.advantages__item--support {
+  background-image: url("../img/icon-feature-rocket.svg");
 }
 
 .advantages__item--present {
-  margin-bottom: 56px;
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {
