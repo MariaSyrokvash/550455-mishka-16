@@ -12,7 +12,7 @@
   background-size: 322px 457px;
   margin-bottom: 39px;
 
-  @media ($retina) {
+  @media #{$retina} {
     background-image: url("../img/map-mobile@2x.jpg");
     background-size: 322px 457px;
   }
@@ -54,7 +54,7 @@
     margin-bottom: 0;
     background-position: 50% 50%;
 
-    @media ($retina) {
+    @media #{$retina} {
       background-image: url("../img/map-tablet@2x.jpg");
     }
   }
@@ -67,7 +67,7 @@
     width: 525px;
     height: 457px;
 
-    @media ($retina) {
+    @media #{$retina} {
       background-image: url("../img/map-desktop@2x.jpg");
     }
   }
