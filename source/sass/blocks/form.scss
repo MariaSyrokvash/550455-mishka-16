@@ -1,0 +1,51 @@
+.order__title {
+  font-size: 13px;
+  line-height: 1.85;
+  color: $text-color;
+  margin-bottom: 30px;
+}
+
+.form-list {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 0.94;
+  color: $seafoam-blue;
+  text-transform: uppercase;
+}
+
+.form__label {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+  color: $title-color;
+}
+
+.form-fieldset {
+  padding: 0;
+  margin: 0;
+  // border: none;
+}
+
+.form__necessarily {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $text-color;
+}
+
+.send-order {
+  width: 260px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.11;
+  background-color: $bg-base;
+  border: solid 1px;
+  border-color: $text-color;
+  color: $text-color;
+  text-transform: uppercase;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+}

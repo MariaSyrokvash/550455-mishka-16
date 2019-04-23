@@ -67,6 +67,10 @@
   .features__description {
     width: 334px;
   }
+
+  .features__desc:last-child {
+    margin-bottom: 7px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -78,6 +82,15 @@
   .features__item {
     flex-direction: column;
     flex-basis: 316px;
+    margin-right: 50px;
+  }
+
+  .features__item:last-child {
+    margin-right: 0;
+  }
+
+  .features__desc:last-child {
+    margin-bottom: 7px;
   }
 
   .features__item-pic {
