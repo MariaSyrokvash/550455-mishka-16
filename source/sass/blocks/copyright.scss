@@ -1,9 +1,17 @@
 .copyright {
   width: auto;
   margin: 0 auto;
-  padding: 26px 30px 15px;
+  padding: 33px 30px 15px;
 }
 
 .copyright__text {
-  margin-right: 30px;
+  margin-right: 21px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 0.95;
 }
+
+
+// @media (min-width: $desktop-width) {
+
+// }

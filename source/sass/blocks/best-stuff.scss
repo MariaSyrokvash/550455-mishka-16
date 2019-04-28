@@ -4,7 +4,7 @@
   color: $title-color;
   margin: 0;
   margin-bottom: 4px;
-  padding-top: 27px;
+  margin-top: 29px;
 }
 
 .best-stuff__subtitle {
@@ -14,7 +14,7 @@
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .best-stuff__text {
@@ -22,8 +22,7 @@
   line-height: $line-height-base;
   color: $text-color;
   margin: 0;
-  margin-bottom: 23px;
-  padding-right: 40px;
+  margin-bottom: 22px;
 }
 
 .best-stuff__list {
@@ -31,6 +30,7 @@
   display: table;
   width: 100%;
   margin-bottom: 28px;
+  border-collapse: collapse;
 }
 
 .best-stuff__row {
@@ -44,6 +44,7 @@
   line-height: 20px;
   padding: 7px 0 11px;
   border-bottom: 1px solid $secondary-color;
+  min-width: 81px;
 }
 
 .best-stuff__value {
@@ -79,16 +80,34 @@
   text-transform: uppercase;
   margin: 0 auto;
   display: block;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 13px;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 36px;
 }
 
+.best-stuff {
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.best-stuff::after {
+  content: "";
+  display: block;
+  height: 7px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: 319px 100%;
+}
 
 @media (min-width: $tablet-width) {
+  .best-stuff {
+    margin-bottom: 50px;
+  }
+
   .best-stuff__inner {
     display: flex;
     flex-wrap: wrap;
@@ -98,12 +117,18 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: baseline;
+    margin-bottom: 50px;
   }
 
   .best-stuff__content {
     display: flex;
     flex-direction: column;
+  }
+
+  .best-stuff__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 37px;
   }
 
   .best-stuff__info {
@@ -118,18 +143,62 @@
 
   .best-stuff__order {
     width: 292px;
+    margin-top: -122px;
   }
 
   .best-stuff__title {
     font-size: 43px;
     line-height: 1.16;
+    margin: 0;
+  }
+
+  .best-stuff__subtitle {
+    width: 75px;
+    margin-bottom: 0;
+    margin-right: 18px;
+    margin-top: 10px;
+  }
+
+  .best-stuff__field {
+    min-width: 67px;
+  }
+
+  .best-stuff__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .best-stuff__pic {
+    margin-bottom: 0;
+    width: 333px;
+    height: 404px;
+  }
+
+  .best-stuff__btn {
+    margin-bottom: 52px;
+  }
+
+  .best-stuff::after {
+    height: 17px;
+    background-position: -28px 0;
+    background-size: 768px 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .best-stuff {
+    margin-bottom: 58px;
+  }
+
   .best-stuff__heading {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    position: relative;
+    top: 79px;
+    left: -2px;
+    z-index: 1;
+    margin-bottom: 129px;
   }
 
   .best-stuff__title {
@@ -138,14 +207,43 @@
   }
 
   .best-stuff__subtitle {
-    margin-right: 107px;
+    margin-right: 43px;
+    margin-left: 53px;
+    margin-top: 12px;
   }
 
   .best-stuff__dsc {
-    margin-left: 250px;
+    margin-left: 175px;
+    margin-bottom: 119px;
   }
 
   .best-stuff__order {
-    margin-left: 250px;
+    margin-left: 175px;
+  }
+
+  .best-stuff__price {
+    margin-bottom: 33px;
+    margin-top: 84px;
+  }
+
+  .best-stuff__text {
+    margin-bottom: 50px;
+  }
+
+  .best-stuff__pic {
+    position: absolute;
+    width: 525px;
+    height: 636px;
+    top: 27px;
+    right: 195px;
+  }
+
+  .best-stuff::after {
+    height: 23px;
+    background-size: 1150px 23px;
+  }
+
+  .best-stuff__btn {
+    margin-bottom: 75px;
   }
 }

@@ -5,8 +5,9 @@
 .promo {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 49.7% 0%;
-  background-size: auto 100%;
+  background-position: 49.7% -16%;
+  background-size: 575px 373px;
+  border-top: 1px solid $primary-color;
 
   @media #{$retina} {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -18,10 +19,10 @@
   margin: 0;
   line-height: 1.11;
   color: $very-dark-brown;
-  padding-left: 28px;
-  padding-right: 28px;
   padding-top: 72px;
   text-align: center;
+  padding-left: 7px;
+  padding-right: 8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,8 +31,10 @@
   }
 
   .promo {
-    margin-bottom: 55px;
     background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: 1150px 746px;
+    background-position: 49.7% 95%;
+    margin-bottom: 43px;
 
     @media #{$retina} {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -41,7 +44,8 @@
   .promo-caption {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 155px;
+    padding-top: 110px;
+    margin-bottom: 376px;
   }
 }
 
@@ -49,6 +53,8 @@
   .promo-caption {
     font-size: 53px;
     line-height: 57px;
+    padding-top: 86px;
+    margin-bottom: 359px;
   }
 
   .promo {
