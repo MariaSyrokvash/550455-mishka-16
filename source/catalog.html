@@ -7,6 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-wrapper">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <svg style="display:none">
       <symbol viewBox="0 0 18 18" id="icon-search">
         <path d="m16.47 14.93-3.415-3.415c.965-1.289 1.545-2.881 1.545-4.616 0-4.253-3.447-7.699-7.7-7.699s-7.7 3.446-7.7 7.699 3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33.607 0 1.1-.492 1.1-1.1 0-.24-.061-.499-.33-.769zm-15.071-8.031c0-3.038 2.462-5.5 5.5-5.5s5.5 2.462 5.5 5.5-2.462 5.5-5.5 5.5-5.5-2.461-5.5-5.5z"/>
@@ -26,7 +29,7 @@
             </picture>
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list main-nav__list--bottom list">
+          <!-- <ul class="main-nav__list main-nav__list--bottom list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -54,7 +57,7 @@
               <a href="#" class="main-nav__link">Распродажа</a>
             </li>
           </ul>
-          <p class="main-nav__text">Бесплатная доставка по России</p>
+          <p class="main-nav__text">Бесплатная доставка по России</p> -->
         </nav>
       </div>
     </header>
@@ -82,7 +85,7 @@
                 <div class="features__footer">
                   <p class="features__price">1 200 руб.</p>
                   <button class="features__btn" type="button"><span class="visually-hidden">Добавить в корзину</span>
-                    <svg class="link-icon__basket" width="21" height="18"><use xlink:href="#icon-basket"></use></svg>
+                    <svg class="link-icon__basket icon__basket" width="21" height="18"><use xlink:href="#icon-basket"></use></svg>
                   </button>
                 </div>
               </div>
@@ -90,9 +93,9 @@
             <li class="features__item">
               <a class="features__link">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                   <img class="features__item-pic" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Фото товара Корзинка для белья">
@@ -121,7 +124,7 @@
                 </picture>
               </a>
               <div class="features__description">
-                <h3 class="features__heading">Большая корзинка для игрушек</h3>
+                <h3 class="features__heading features__heading--toy">Большая корзинка для игрушек</h3>
                 <p class="features__desc">Диаметр 30 см, высота 30 см</p>
                 <div class="features__footer">
                   <p class="features__price">1500 руб.</p>

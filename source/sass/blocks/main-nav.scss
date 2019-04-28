@@ -69,7 +69,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #f1f1f1;
   }
 
   .main-nav__toggle {
@@ -108,6 +107,25 @@
     line-height: 1.6;
     font-weight: bold;
     color: $title-color;
+  }
+
+  .main-nav__link--search {
+    font-size: 0;
+  }
+
+  .main-nav__item--basket {
+    padding-left: 10px;
+    display: block;
+  }
+
+  .link-icon__search {
+    left: 356px;
+    top: 37px;
+  }
+
+  .link-icon__basket {
+    bottom: 6px;
+    right: 175px;
   }
 
   .main-nav__list--top {
