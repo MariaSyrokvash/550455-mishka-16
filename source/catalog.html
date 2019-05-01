@@ -29,7 +29,7 @@
             </picture>
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <!-- <ul class="main-nav__list main-nav__list--bottom list">
+          <ul class="main-nav__list main-nav__list--bottom list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -38,14 +38,15 @@
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list--top list">
-            <li class="main-nav__item">
-              <a class="main-nav__link link-icon" href="#">Поиск по сайту
-                <svg class="link-icon__search" width="18" height="18"><use xlink:href="#icon-search"></use></svg>
+            <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link link-icon main-nav__link--search" href="#">
+                <svg class="link-icon__search" width="18" height="18"><use xlink:href="#icon-search"></use></svg>Поиск по сайту
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link-icon" href="#">Корзина: пока пуста
+            <li class="main-nav__item main-nav__item--basket">
+              <a class="main-nav__link link-icon main-nav__link--basket" href="#">
                 <svg class="link-icon__basket" width="21" height="18"><use xlink:href="#icon-basket"></use></svg>
+                Корзина: пока пуста
               </a>
             </li>
           </ul>
@@ -57,13 +58,15 @@
               <a href="#" class="main-nav__link">Распродажа</a>
             </li>
           </ul>
-          <p class="main-nav__text">Бесплатная доставка по России</p> -->
+          <p class="main-nav__text">Бесплатная доставка по России</p>
         </nav>
       </div>
     </header>
     <main class="page-content">
-      <div class="page-content__inner container">
-        <h2 class="page-content__title">Каталог товаров</h2>
+      <div class="page-heading">
+        <div class="page-content__inner container">
+          <h2 class="page-content__title">Каталог товаров</h2>
+        </div>
       </div>
       <section class="features">
         <div class="features__inner container">
@@ -137,14 +140,35 @@
           </ul>
         </div>
       </section>
+      <section class="video">
+        <div class="video__inner container">
+          <div class="video__heading video__block">
+            <h3 class="video__title">Процесс производства</h3>
+          </div>
+          <div class="video__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video-pic" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства">
+            </picture>
+          </div>
+          <div class="video__description video__block">
+            <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="video-button" href="form.html">Сделать заказ</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner container">
         <a class="page-footer__logo">
           <picture>
-              <source media="(min-width: 1150px)" srcset="img/logo-tablet.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="logo__image logo-footer" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+            <source media="(min-width: 1150px)" srcset="img/logo-footer.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-footer.svg">
+            <img class="logo__image logo-footer" src="img/logo-footer.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
           </picture>
         </a>
         <ul class="social__list list">

@@ -187,6 +187,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .best-stuff__inner {
+    position: relative;
+  }
+
   .best-stuff {
     margin-bottom: 58px;
   }

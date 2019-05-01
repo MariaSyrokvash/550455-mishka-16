@@ -1,6 +1,7 @@
 .features__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .features__item {
@@ -79,6 +80,7 @@
 
   .features__description {
     width: 334px;
+    height: 334px;
   }
 
   .features__heading {
