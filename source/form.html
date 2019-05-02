@@ -22,7 +22,7 @@
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list main-nav__list--bottom list">
-            <li class="main-nav__item main-nav__item--current">
+            <!-- <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
@@ -30,18 +30,15 @@
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list--top list">
-            <li class="main-nav__item">
-              <a class="main-nav__link link-icon" href="#">Поиск по сайту
-                <svg class="link-icon__search" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                  <path fill="#d3d2d2" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
-                </svg>
+            <li class="main-nav__item main-nav__item--search">
+              <a class="main-nav__link link-icon main-nav__link--search" href="#">
+                <svg class="link-icon__search" width="18" height="18"><use xlink:href="#icon-search"></use></svg>Поиск по сайту
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link-icon" href="#">Корзина: пока пуста
-                <svg class="link-icon__basket" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-                  <path fill="#d3d2d2" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-                </svg>
+            <li class="main-nav__item main-nav__item--basket">
+              <a class="main-nav__link link-icon main-nav__link--basket" href="#">
+                <svg class="link-icon__basket" width="21" height="18"><use xlink:href="#icon-basket"></use></svg>
+                Корзина: пока пуста
               </a>
             </li>
           </ul>
@@ -54,25 +51,27 @@
             </li>
           </ul>
           <p class="main-nav__text">Бесплатная доставка по России</p>
-        </nav>
+        </nav> -->
       </div>
     </header>
     <main class="page-content">
-      <section class="form">
+      <div class="form-heading">
         <div class="page-content__inner container">
           <h2 class="page-content__title">Вязание на заказ</h2>
         </div>
+      </div>
+      <section class="form">
         <p class="order__title container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="form container" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="form-order container" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form-fieldset">
             <div class="order-type">
               <legend class="form-list">Тип</legend>
               <p class="form-item">
-                <input class="form__input" type="radio" name="accessory" value="yes" id="accessory" checked>
+                <input class="form__input visually-hidden" type="radio" name="accessory" value="yes" id="accessory" checked>
                 <label class="form__label" for="accessory">Аксессуар для  интерьера</label>
               </p>
               <p class="form-item">
-                <input class="form__input" type="radio" name="product-type" value="no" id="toy">
+                <input class="form__input visually-hidden" type="radio" name="product-type" value="no" id="toy">
                 <label class="form__label" for="toy">Детская игрушка</label>
               </p>
             </div>
@@ -80,70 +79,70 @@
           <fieldset class="form-fieldset">
             <div class="order-color">
               <legend class="form-list">Цвет</legend>
-              <p class="form-item">
-                <input class="form__input" type="checkbox" name="white" id="white" checked>
+              <p class="form-item form-item__checkbox">
+                <input class="form__input visually-hidden" type="checkbox" name="white" id="white" checked>
                 <label class="form__label" for="white">Белый</label>
               </p>
-              <p class="form-item">
-                <input class="form__input" type="checkbox" name="gray" id="gray" checked>
+              <p class="form-item form-item__checkbox">
+                <input class="form__input visually-hidden" type="checkbox" name="gray" id="gray" checked>
                 <label class="form__label" for="gray">Серый</label>
               </p>
-              <p class="form-item">
-                <input class="form__input" type="checkbox" name="tiffany" id="tiffany">
+              <p class="form-item form-item__checkbox">
+                <input class="form__input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
                 <label class="form__label" for="tiffany">«Тиффани»</label>
               </p>
-              <p class="form-item">
-                <input class="form__input" type="checkbox" name="black" id="black">
+              <p class="form-item form-item__checkbox">
+                <input class="form__input visually-hidden" type="checkbox" name="black" id="black">
                 <label class="form__label" for="black">Черный</label>
               </p>
-              <p class="form-item">
-                <input class="form__input" type="checkbox" name="pink" id="pink">
+              <p class="form-item form-item__checkbox">
+                <input class="form__input visually-hidden" type="checkbox" name="pink" id="pink">
                 <label class="form__label" for="pink">Розовый</label>
               </p>
-              <p class="form-item">
-                <input class="form__input" type="checkbox" name="orange" id="orange">
+              <p class="form-item form-item__checkbox">
+                <input class="form__input visually-hidden" type="checkbox" name="orange" id="orange">
                 <label class="form__label" for="orange">Оранжевый</label>
               </p>
             </div>
           </fieldset>
           <fieldset class="form-fieldset">
             <div class="order-name">
-              <legend class="form-list">Фио</legend>
-              <p class="form-item">
-                <label class="form__label" for="name">Имя:</label>
-                <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+              <legend class="form-list form-list--text">Фио</legend>
+              <p class="form-item__text">
+                <label class="form__label form__label--text" for="name">Имя:</label>
+                <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
               </p>
-              <p class="form-item">
-                <label class="form__label" for="surname">Фамилия:</label>
-                <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              <p class="form-item__text">
+                <label class="form__label form__label--text" for="surname">Фамилия:</label>
+                <input class="form__input form__input--text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
               </p>
-              <p class="form-item">
-                <label class="form__label" for="patronymic">Отчество:</label>
-                <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
+              <p class="form-item__text">
+                <label class="form__label form__label--text" for="patronymic">Отчество:</label>
+                <input class="form__input form__input--text" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
               </p>
             </div>
           </fieldset>
           <fieldset class="form-fieldset">
             <div class="order-number">
-              <legend class="form-list">Тел</legend>
-              <p class="form-item">
-                <input class="form__input" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <legend class="form-list form-list__number">Тел</legend>
+              <p class="form-item form-item__number">
+                <input class="form__input form__input-number" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </p>
             </div>
           </fieldset>
           <fieldset class="form-fieldset">
             <div class="order-email">
-              <legend class="form-list">E-mail</legend>
-              <p class="form-item">
-                <input class="form__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+              <legend class="form-list form-list__email">E-mail</legend>
+              <p class="form-item form-item__email">
+                <input class="form__input form__input-email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
               </p>
             </div>
           </fieldset>
           <fieldset class="form-fieldset">
             <div class="order-info">
-              <legend class="form-list">Доп</legend>
-              <p class="form-item">
-                <textarea class="form__input" name="info" id="info"placeholder="Опишите все ваши  пожелания к заказу" rows="4"></textarea>
+              <legend class="form-list form-list__info">Доп</legend>
+              <p class="form-item form-item__info">
+                <textarea class="form__input form__input-info" name="info" id="info"placeholder="Опишите все ваши  пожелания к заказу" rows="4"></textarea>
               </p>
             </div>
           </fieldset>
