@@ -61,12 +61,12 @@
 
 .video-button {
   display: block;
-  box-sizing: border-box;
   width: 100%;
   padding: 14px 0;
   border: 2px solid $text-color;
   font-size: 17px;
   line-height: 20px;
+  font-weight: bold;
   color: $text-color;
   text-decoration: none;
   text-transform: uppercase;

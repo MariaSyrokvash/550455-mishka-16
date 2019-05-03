@@ -59,7 +59,7 @@
 .features__btn {
   border: none;
   padding-right: 27px;
-  background-color: none;
+  background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
@@ -81,24 +81,30 @@
   .features__description {
     width: 334px;
     height: 334px;
+    display: flex;
+    flex-direction: column;
   }
 
   .features__heading {
     font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 5px;
+    margin: 0;
   }
 
   .features__desc {
     font-size: 15px;
     line-height: 2;
-    margin-bottom: 175px;
+    margin: 0;
   }
 
   .features__price {
     font-size: 17px;
     line-height: 1.41;
     padding-top: 21px;
+  }
+
+  .features__footer {
+    margin-top: auto;
   }
 
   .features__heading--toy {
