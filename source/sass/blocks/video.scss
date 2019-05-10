@@ -1,5 +1,5 @@
 .video {
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 }
 
 .video__heading {
@@ -12,7 +12,7 @@
   position: absolute;
   content: "";
   display: block;
-  top: 27px;
+  top: 30px;
   left: 33px;
   width: 32px;
   height: 32px;
@@ -26,7 +26,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 23px;
-  padding-top: 23px;
+  padding-top: 25px;
   padding-left: 57px;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .video__description {
-  padding: 21px 34px 32px 35px;
+  padding: 21px 34px 32px 33px;
   border: 1px solid #ececec;
 }
 
@@ -76,7 +76,7 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    margin-bottom: 76px;
+    margin-bottom: 59px;
   }
 
   .video__inner {
@@ -119,7 +119,7 @@
   }
 
   .video__description {
-    padding: 31px 40px 32px 40px;
+    padding: 31px 40px 44px 40px;
   }
 }
 
@@ -143,6 +143,7 @@
   .video__description {
     padding-left: 56px;
     padding-top: 31px;
+    padding-bottom: 54px;
     border-top: none;
   }
 

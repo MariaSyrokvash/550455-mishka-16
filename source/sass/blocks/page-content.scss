@@ -15,7 +15,7 @@
 
 @media (min-width: $tablet-width) {
   .page-heading {
-    padding-top: 96px;
+    padding-top: 57px;
     padding-bottom: 90px;
     position: relative;
     margin-bottom: 68px;
@@ -42,22 +42,16 @@
 
 @media (min-width: $desktop-width) {
   .page-heading {
-    padding-top: 96px;
+    padding-top: 53px;
     padding-bottom: 120px;
     position: relative;
-    margin-bottom: 108px;
+    margin-bottom: 111px;
   }
 
   .page-content__title {
     font-size: 53px;
     line-height: 1.08;
   }
-
-  // .page-content__inner {
-  //   padding-top: 93px;
-  //   padding-bottom: 120px;
-  //   margin-bottom: 111px;
-  // }
 
   .page-content__inner::after {
     height: 34px;

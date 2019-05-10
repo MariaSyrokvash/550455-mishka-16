@@ -5,7 +5,7 @@
 }
 
 .features__item {
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 }
 
 .features__item-pic {
@@ -15,6 +15,7 @@
 
 .features__description {
   padding: 27px;
+  padding-bottom: 31px;
   border: 1px solid #ececec;
 }
 
@@ -38,6 +39,7 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ececec;
+  position: relative;
 }
 
 .features__price {
@@ -50,16 +52,96 @@
   padding-top: 25px;
 }
 
-.icon__basket {
-  position: absolute;
-  right: 57px;
-  bottom: -161px;
+// .icon__basket {
+//   position: absolute;
+//   right: 57px;
+//   bottom: -161px;
+// }
+
+.icon-basket {
+  fill: #d3d2d2;
+  width: 21px;
+  height: 21px;
 }
 
 .features__btn {
   border: none;
-  padding-right: 27px;
   background-color: transparent;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: -10px;
+  bottom: -6px;
+}
+
+.modal {
+  width: 320px;
+  min-height: 337px;
+  padding: 36px 30px 46px;
+  background-color: $bg-base;
+  border: 1px solid #c6c6c6;
+  border-left: none;
+  border-right: none;
+  box-shadow: 0 5px 10px rgba(0,1,1,.25);
+}
+
+.modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+  width: 160px;
+  margin: 0 auto 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__text {
+  margin-bottom: 28px;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal__controls {
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.modal__input {
+  display: none;
+}
+
+.modal__label {
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  width: 82px;
+  height: 52px;
+  padding: 15px 0;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  border: 2px solid #ececec;
+}
+
+.modal__button {
+  border: 0;
+  color: #fff;
+  background-color: #63d1bb;
+  cursor: pointer;
+  padding: 14px 0;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
 }
 
 @media (min-width: $tablet-width) {
@@ -95,20 +177,57 @@
     font-size: 15px;
     line-height: 2;
     margin: 0;
+    padding-top: 4px;
   }
 
   .features__price {
     font-size: 17px;
     line-height: 1.41;
-    padding-top: 21px;
+    padding-top: 17px;
   }
 
   .features__footer {
     margin-top: auto;
   }
 
+  .features__btn {
+    border: none;
+    background-color: transparent;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: -5px;
+    bottom: -6px;
+  }
+
   .features__heading--toy {
     width: 200px;
+  }
+
+  .modal {
+    width: 568px;
+    padding-top: 30px;
+    padding-left: 108px;
+    padding-right: 108px;
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+  }
+
+  .modal__title {
+    width: 100%;
+    margin-bottom: 18px;
+    font-size: 29px;
+    line-height: 57px;
+  }
+
+  .modal__text {
+    margin-bottom: 26px;
+    font-size: 17px;
+  }
+
+  .modal__label {
+    width: 112px;
+    font-size: 17px;
   }
 }
 
@@ -142,7 +261,7 @@
     height: 197px;
   }
 
-  .features__desc {
-    margin-bottom: 39px;
-  }
+  // .features__desc {
+  //   margin-bottom: 39px;
+  // }
 }
