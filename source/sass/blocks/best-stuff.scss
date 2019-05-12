@@ -87,6 +87,15 @@
   margin-bottom: 36px;
 }
 
+.btn:hover {
+  background-color: $text-color;
+  color: $bg-base;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .best-stuff {
   position: relative;
   margin-bottom: 26px;

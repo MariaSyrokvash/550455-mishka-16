@@ -19,12 +19,28 @@
   border: 1px solid #ececec;
 }
 
+.features__item:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.features__item:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .features__heading {
   font-size: 17px;
   line-height: $line-height-base;
   color: $title-color;
   margin: 0;
   margin-bottom: 4px;
+}
+
+.features__heading:hover {
+  opacity: 0.6;
+}
+
+.features__heading:active {
+  opacity: 0.3;
 }
 
 .features__desc {
@@ -52,21 +68,22 @@
   padding-top: 25px;
 }
 
-// .icon__basket {
-//   position: absolute;
-//   right: 57px;
-//   bottom: -161px;
-// }
-
 .icon-basket {
   fill: #d3d2d2;
   width: 21px;
   height: 21px;
 }
 
+.icon-basket:hover {
+  fill: $seafoam-blue;
+}
+
+.icon-basket:active {
+  fill: $seafoam-blue;
+  opacity: 0.3;
+}
+
 .features__btn {
-  border: none;
-  background-color: transparent;
   border: none;
   background-color: transparent;
   position: absolute;
@@ -82,13 +99,13 @@
   border: 1px solid #c6c6c6;
   border-left: none;
   border-right: none;
-  box-shadow: 0 5px 10px rgba(0,1,1,.25);
+  box-shadow: 0 5px 10px #00010140;
 }
 
 .modal__title {
   font-size: 25px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
   width: 160px;
   margin: 0 auto 8px;
   text-align: center;
@@ -132,9 +149,19 @@
   border: 2px solid #ececec;
 }
 
+.modal__label:hover {
+  border: solid 2px #444444;
+  opacity: 0.3;
+}
+
+.modal__label:active {
+  border: solid 2px #62d1ba;
+  opacity: 1;
+}
+
 .modal__button {
   border: 0;
-  color: #fff;
+  color: #ffffff;
   background-color: #63d1bb;
   cursor: pointer;
   padding: 14px 0;
@@ -191,8 +218,6 @@
   }
 
   .features__btn {
-    border: none;
-    background-color: transparent;
     border: none;
     background-color: transparent;
     position: absolute;

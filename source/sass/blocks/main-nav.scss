@@ -34,6 +34,14 @@
   text-decoration: none;
 }
 
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+}
+
 .link-icon {
   position: relative;
   width: 18px;
@@ -47,10 +55,28 @@
   fill: #d3d2d2;
 }
 
+.link-icon__search:hover {
+  fill: $seafoam-blue;
+}
+
+.link-icon__search:active {
+  fill: $seafoam-blue;
+  opacity: 0.3;
+}
+
 .link-icon__basket {
   left: -44px;
   position: absolute;
   fill: #d3d2d2;
+}
+
+.link-icon__basket:hover {
+  fill: $seafoam-blue;
+}
+
+.link-icon__basket:active {
+  fill: $seafoam-blue;
+  opacity: 0.3;
 }
 
 .main-nav__list--extra {
@@ -59,6 +85,14 @@
 
 .main-nav__text {
   display: none;
+}
+
+.main-nav__text:hover {
+  opacity: 0.6;
+}
+
+.main-nav__text:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

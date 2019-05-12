@@ -31,6 +31,20 @@
   padding-bottom: 30px;
 }
 
+.social__link {
+  fill: #231f20;
+}
+
+.social__link:hover {
+  fill: #46c1ae;
+}
+
+.social__link:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+
 @media (min-width: $tablet-width) {
   .social__list {
     padding: 0;

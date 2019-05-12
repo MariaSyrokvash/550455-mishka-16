@@ -11,7 +11,22 @@
   line-height: 0.95;
 }
 
+.copyright__text:hover {
+  color: #000000;
+}
 
-// @media (min-width: $desktop-width) {
+.copyright__text:active {
+  opacity: 0.3;
+}
 
-// }
+.copyright__link {
+  fill: #63d1bb;
+}
+
+.copyright__link:hover {
+  fill: #46c1ae;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}

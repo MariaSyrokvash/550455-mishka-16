@@ -29,6 +29,14 @@
   word-wrap: break-word;
 }
 
+.contacts__link:hover {
+  color: $link-color--hover;
+}
+
+.contacts__link:active {
+  opacity: 0.3;
+}
+
 .contacts {
   margin-bottom: 34px;
 }
@@ -139,6 +147,12 @@
 
   .map__img-wrapper {
     margin-bottom: 54px;
+  }
+
+  .mapp {
+    width: 768px;
+    height: 457px;
+    background-color: grey;
   }
 
   .writeus-inner__btn {

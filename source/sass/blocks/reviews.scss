@@ -54,6 +54,7 @@
   margin-bottom: 38px;
 }
 
+
 .reviews__toogle--prev {
   background-image: url("../img/icon-left-arrow.svg");
   width: 130px;
@@ -66,6 +67,14 @@
   cursor: pointer;
 }
 
+.reviews__toogle--prev:hover {
+  opacity: 0.6;
+}
+
+.reviews__toogle--prev:active {
+  opacity: 0.3;
+}
+
 .reviews__toogle--next {
   background-image: url("../img/icon-right-arrow.svg");
   width: 130px;
@@ -76,6 +85,14 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
+}
+
+.reviews__toogle--next:hover {
+  opacity: 0.6;
+}
+
+.reviews__toogle--next:active {
+  opacity: 0.3;
 }
 
 .reviews__write {
