@@ -6,6 +6,19 @@
   display: none;
 }
 
+.logo-footer {
+  fill: #000000;
+}
+
+.logo-footer:hover {
+  fill: #46c1ae;
+  cursor: pointer;
+}
+
+.logo-footer:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__inner {
     display: flex;
@@ -27,16 +40,6 @@
     margin: 0;
     display: block;
   }
-
-
-  .page-footer__logo:hover {
-    fill: #46c1ae;
-  }
-
-  .page-footer__logo:active {
-    opacity: 0.3;
-  }
-
 
   .copyright {
     margin: 0;

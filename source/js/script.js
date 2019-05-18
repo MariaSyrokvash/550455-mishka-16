@@ -1,13 +1,14 @@
-function initMap() {
-  var coordinates = {lat: 59.936624, lng: 30.322059},
+var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
 
-      map = new google.maps.Map(document.getElementById('map'), {
-          center: coordinates
-      });
+navMain.classList.remove('main-nav--nojs');
 
-      marker = new google.maps.Marker({
-        position: coordinates,
-        map: map,
-        icon: image
-    });
-}
+navToggle.addEventListener('click', function() {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});

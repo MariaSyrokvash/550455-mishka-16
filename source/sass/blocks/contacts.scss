@@ -51,6 +51,10 @@
   margin-bottom: 27px;
 }
 
+.map {
+  position: relative;
+}
+
 .map__img-wrapper {
   margin-bottom: 36px;
 }
@@ -60,6 +64,16 @@
   width: 322px;
   height: 457px;
   margin: 0 auto;
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-map-pin.svg");
+  width: 67px;
+  height: 100px;
+  top: 148px;
+  left: 139px;
 }
 
 .writeus-inner {
@@ -149,15 +163,20 @@
     margin-bottom: 54px;
   }
 
-  .mapp {
-    width: 768px;
-    height: 457px;
-    background-color: grey;
-  }
+  // .mapp {
+  //   width: 768px;
+  //   height: 457px;
+  //   background-color: grey;
+  // }
 
   .writeus-inner__btn {
     width: 230px;
     margin: 0 auto;
+  }
+
+  .map::after {
+    top: 100px;
+    left: 363px;
   }
 }
 
@@ -209,5 +228,10 @@
 
   .contacts__wrapper {
     margin-bottom: 50px;
+  }
+
+  .map::after {
+    top: -302px;
+    left: 815px;
   }
 }
