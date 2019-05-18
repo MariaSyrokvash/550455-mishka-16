@@ -36,7 +36,7 @@
   }
 }
 
-.link-icon__interior {
+.link-icon-interior {
   position: absolute;
   fill: #149080;
   z-index: 1;
@@ -46,7 +46,7 @@
   margin-top: 21px;
 }
 
-.link-icon__toy {
+.link-icon-toy {
   position: absolute;
   fill: #149080;
   z-index: 1;
@@ -99,11 +99,11 @@
     line-height: 1.5;
   }
 
-  .link-icon__interior {
+  .link-icon-interior {
     top: 7px;
   }
 
-  .link-icon__toy {
+  .link-icon-toy {
     top: 10px;
     right: 8px;
   }

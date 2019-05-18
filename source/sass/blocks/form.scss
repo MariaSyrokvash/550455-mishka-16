@@ -214,7 +214,7 @@
   border-radius: 50%;
 }
 
-.form-item__text {
+.form__text {
   display: flex;
   flex-direction: column;
 }
@@ -237,7 +237,7 @@
   color: #000000;
 }
 
-.form-item__text,
+.form__text,
 .form-item__number,
 .form-item__email {
   padding-bottom: 22px;
@@ -459,7 +459,7 @@
     padding-top: 13px;
   }
 
-  .form__list--color {
+  .form__color {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -478,14 +478,14 @@
     display: flex;
   }
 
-  .form__list--name {
+  .form__name {
     display: flex;
     flex-direction: column;
     width: 500px;
     padding-bottom: 10px;
   }
 
-  .form-item__text {
+  .form__text {
     display: block;
     margin: 0;
     margin-bottom: 7px;
@@ -633,7 +633,7 @@
     padding-right: 71px;
   }
 
-  .form__list--color {
+  .form__color {
     width: 875px;
   }
 
@@ -641,7 +641,7 @@
     width: 262px;
   }
 
-  .form__list--name {
+  .form__name {
     width: 750px;
   }
 

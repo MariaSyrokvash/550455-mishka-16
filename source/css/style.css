@@ -759,7 +759,7 @@ input[type="radio"].visually-hidden {
     width: 100%;
     display: inline-block; }
 
-.link-icon__interior {
+.link-icon-interior {
   position: absolute;
   fill: #149080;
   z-index: 1;
@@ -768,7 +768,7 @@ input[type="radio"].visually-hidden {
   margin-right: 37px;
   margin-top: 21px; }
 
-.link-icon__toy {
+.link-icon-toy {
   position: absolute;
   fill: #149080;
   z-index: 1;
@@ -796,9 +796,9 @@ input[type="radio"].visually-hidden {
     padding-left: 36px;
     font-size: 20px;
     line-height: 1.5; }
-  .link-icon__interior {
+  .link-icon-interior {
     top: 7px; }
-  .link-icon__toy {
+  .link-icon-toy {
     top: 10px;
     right: 8px; } }
 
@@ -1058,28 +1058,28 @@ input[type="radio"].visually-hidden {
 .advantages__item--eco::after {
   background-image: url("../img/icon-feature-flower.svg"); }
 
-.text__eco {
+.advantages__eco {
   display: block;
   padding-right: 63px; }
 
 .advantages__item--price::after {
   background-image: url("../img/icon-feature-money.svg"); }
 
-.text__price {
+.advantages__price {
   display: block;
   padding-right: 38px; }
 
 .advantages__item--like::after {
   background-image: url("../img/icon-feature-heart.svg"); }
 
-.text__like {
+.advantages__like {
   display: block;
   padding-right: 58px; }
 
 .advantages__item--hand::after {
   background-image: url("../img/icon-feature-ball.svg"); }
 
-.text__hand {
+.advantages__hand {
   display: block;
   padding-right: 38px; }
 
@@ -1089,7 +1089,7 @@ input[type="radio"].visually-hidden {
 .advantages__item--present::after {
   background-image: url("../img/icon-feature-gift.svg"); }
 
-.text__present {
+.advantages__present {
   display: block;
   padding-right: 38px; }
 
@@ -1124,7 +1124,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
-  .text__eco {
+  .advantages__eco {
     padding-right: 0; }
   .advantages__item--price {
     width: 235px;
@@ -1132,7 +1132,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-order: 3;
             order: 3;
     margin-right: 100px; }
-  .text__price {
+  .advantages__price {
     padding-right: 0; }
   .advantages__item--like {
     width: 235px;
@@ -1140,14 +1140,14 @@ input[type="radio"].visually-hidden {
         -ms-flex-order: 5;
             order: 5;
     margin-right: 100px; }
-  .text__like {
+  .advantages__like {
     padding-right: 0; }
   .advantages__item--hand {
     width: 260px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2; }
-  .text__hand {
+  .advantages__hand {
     padding-right: 0; }
   .advantages__item--support {
     width: 295px;
@@ -1159,7 +1159,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6; }
-  .text__present {
+  .advantages__present {
     padding-right: 0; } }
 
 @media (min-width: 1150px) {
@@ -1203,7 +1203,7 @@ input[type="radio"].visually-hidden {
   line-height: 2;
   margin-bottom: 26px; }
 
-.reviews__author--name {
+.reviews__name {
   font-size: 17px;
   line-height: 1.41;
   font-weight: 800;
@@ -1211,7 +1211,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 4px;
   display: block; }
 
-.reviews__author--mail {
+.reviews__mail {
   font-style: normal;
   display: block;
   font-size: 17px;
@@ -1224,7 +1224,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin-bottom: 38px; }
 
-.reviews__toogle--prev {
+.reviews__prev {
   background-image: url("../img/icon-left-arrow.svg");
   width: 130px;
   height: 52px;
@@ -1235,7 +1235,7 @@ input[type="radio"].visually-hidden {
   background-position: 50% 50%;
   cursor: pointer; }
 
-.reviews__toogle--next {
+.reviews__next {
   background-image: url("../img/icon-right-arrow.svg");
   width: 130px;
   height: 52px;
@@ -1331,9 +1331,9 @@ input[type="radio"].visually-hidden {
         align-self: flex-end;
     margin-bottom: 0;
     width: 175px; }
-  .reviews__toogle--next {
+  .reviews__next {
     border: none; }
-  .reviews__toogle--prev {
+  .reviews__prev {
     border: none; }
   .reviews__write {
     width: 175px; }
@@ -1977,7 +1977,7 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   margin-bottom: 50px; }
 
-.form-item__text {
+.form__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
