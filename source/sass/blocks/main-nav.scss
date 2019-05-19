@@ -8,16 +8,21 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 30px;
+  top: 32px;
   right: 30px;
   width: 21px;
   height: 20px;
   border: none;
-  // background-color: transparent;
+  background-color: transparent;
   // background-image: url("../img/icon-menu-close.svg");
-  // background-repeat: no-repeat;
-  // border: none;
+  // background-repeat: no-repeat
   cursor: pointer;
+}
+
+.main-nav--nojs {
+  .main-nav__toggle{
+    display: none;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -26,9 +31,9 @@
   top: 0;
   left: 0;
   width: 20px;
-  height: 4px;
-  background-color: #000000;
-  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+  height: 2px;
+  background-color: #231f1e;
+  box-shadow: 0 6px 0 0 #231f1e, 0 12px 0 0 #231f1e;
 }
 
 .main-nav--opened .main-nav__toggle::before,
@@ -38,8 +43,8 @@
   top: 7px;
   left: 0;
   width: 20px;
-  height: 4px;
-  background-color: #000000;
+  height: 2px;
+  background-color: #231f1e;
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -69,6 +74,10 @@
   padding-top: 26px;
   padding-bottom: 29px;
   padding-left: 75px;
+}
+
+.main-nav__item--current {
+  border-top: 1px solid $secondary-color;
 }
 
 .main-nav__link {
@@ -103,6 +112,7 @@
 
 .link-icon__search:hover {
   fill: $seafoam-blue;
+  opacity: 1;
 }
 
 .link-icon__search:active {
@@ -118,6 +128,7 @@
 
 .link-icon__basket:hover {
   fill: $seafoam-blue;
+  opacity: 1;
 }
 
 .link-icon__basket:active {
@@ -131,14 +142,6 @@
 
 .main-nav__text {
   display: none;
-}
-
-.main-nav__text:hover {
-  opacity: 0.6;
-}
-
-.main-nav__text:active {
-  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -209,6 +212,18 @@
   .main-nav__link--search {
     font-size: 0;
     line-height: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-nav__item--search:hover svg {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  .main-nav__item--search:active svg {
+    opacity: 0.3;
   }
 
   .main-nav__item--basket {
@@ -219,14 +234,24 @@
     height: 89px;
   }
 
+  .main-nav__item--basket:hover svg {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  .main-nav__item--basket:active svg {
+    opacity: 0.3;
+  }
+
   .main-nav__link--basket {
     font-size: 17px;
     line-height: 1.41;
   }
 
   .link-icon__search {
-    left: 38px;
-    top: 19px;
+    left: 0;
+    position: relative;
+    margin: auto
   }
 
   .link-icon__basket {
@@ -244,6 +269,10 @@
   .main-nav__list--bottom {
     flex-basis: 350px;
     order: 1;
+  }
+
+  .main-nav__item--current {
+    border-top: none;
   }
 }
 

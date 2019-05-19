@@ -7,9 +7,9 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-wrapper">
-    <div style="display:none">
+    <!-- <div style="display:none">
       <include src="build/img/sprite.svg"></include>
-    </div>
+    </div> -->
     <svg style="display:none">
       <symbol viewBox="0 0 18 18" id="icon-search">
         <path d="m16.47 14.93-3.415-3.415c.965-1.289 1.545-2.881 1.545-4.616 0-4.253-3.447-7.699-7.7-7.699s-7.7 3.446-7.7 7.699 3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33.607 0 1.1-.492 1.1-1.1 0-.24-.061-.499-.33-.769zm-15.071-8.031c0-3.038 2.462-5.5 5.5-5.5s5.5 2.462 5.5 5.5-2.462 5.5-5.5 5.5-5.5-2.461-5.5-5.5z"/>
@@ -181,7 +181,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner container">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <svg class="logo-footer" width="102" height="34"><use xlink:href="#logo-footer"></use></svg>
         </a>
         <ul class="social social__list list">
@@ -214,12 +214,12 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="modal__text">Выберите размер:</p>
           <div class="modal__controls">
-            <input type="checkbox" name="s-size" class="modal__input modal__input--small" id="s-size" checked="checked">
-            <label for="s-size"><a class="modal__label modal__label--small">s</a></label>
+            <input type="checkbox" name="s-size" class="modal__input modal__input--small" id="s-size" checked>
+            <label for="s-size" class="modal__label modal__label--small">s</label>
             <input type="checkbox" name="m-size" class="modal__input" id="m-size">
-            <label for="m-size"><a class="modal__label">m</a></label>
+            <label for="m-size" class="modal__label">m</label>
             <input type="checkbox" name="l-size" class="modal__input" id="l-size">
-            <label for="l-size"><a class="modal__label">l</a></label>
+            <label for="l-size" class="modal__label">l</label>
           </div>
           <button class="modal__button" type="submit">Добавить</button>
         </form>
