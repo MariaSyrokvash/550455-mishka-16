@@ -10,16 +10,8 @@
   position: relative;
 }
 
-.content-list__item {
-  & > svg {
-    opacity: 0.5;
-  }
-}
-
-.content-list__item:hover {
-  & > svg {
+.content-list__item:hover svg {
     opacity: 0.7;
-  }
 }
 
 .content-list__item:active {
@@ -41,14 +33,14 @@
 
   &--interior {
     background-color: $seafoam-blue;
-    min-height: 100px;
+    min-height: 102px;
     width: 100%;
     display: inline-block;
   }
 
   &--toy {
     background-color: $greeny-blue;
-    min-height: 100px;
+    min-height: 102px;
     width: 100%;
     display: inline-block;
   }
@@ -70,6 +62,7 @@
   right: 0;
   margin-right: 37px;
   margin-top: 21px;
+  fill: #149080;
 }
 
 .link-icon-toy {
@@ -80,6 +73,7 @@
   right: 0;
   margin-right: 26px;
   margin-top: 21px;
+  fill: #149080;
 }
 
 .content-list__item--interior:hover {

@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 31px;
+  margin-bottom: 37px;
 }
 
 .advantages__title {
@@ -20,9 +20,8 @@
   font-weight: bold;
   line-height: 20px;
   position: relative;
-  padding-top: 64px;
-  margin-bottom: 20px;
-  // outline: 1px solid;
+  padding-top: 65px;
+  margin-bottom: 18px;
 }
 
 .advantages__item--eco::after {
@@ -80,8 +79,8 @@
   content: "";
   width: 55px;
   height: 38px;
-  top: 11px;
-  left: -4px;
+  top: 13px;
+  left: -5px;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -89,10 +88,6 @@
 @media (min-width: $tablet-width) {
   .advantages {
     margin-bottom: 36px;
-  }
-
-  .advantages__list {
-    padding: 0;
   }
 
   .advantages__title {
@@ -105,55 +100,51 @@
   .advantages__item {
     font-size: 20px;
     line-height: 1.1;
-    margin-bottom: 47px;
-  }
-
-  .advantages__item--eco {
-    width: 230px;
-    margin-right: 100px;
-    order: 1;
+    margin-bottom: 45px;
+    flex-basis: 334px;
+    padding-right: 41px;
   }
 
   .advantages__eco {
     padding-right: 0;
   }
 
-  .advantages__item--price {
-    width: 235px;
-    order: 3;
-    margin-right: 100px;
+  .advantages__item--eco {
+    order: 1;
+    padding-right: 110px;
   }
 
   .advantages__price {
     padding-right: 0;
   }
 
-  .advantages__item--like {
-    width: 235px;
-    order: 5;
-    margin-right: 100px;
+  .advantages__item--price {
+    order: 3;
+    padding-right: 75px;
   }
 
   .advantages__like {
     padding-right: 0;
   }
 
-  .advantages__item--hand {
-    width: 260px;
-    order: 2;
+  .advantages__item--like {
+    order: 5;
+    padding-right: 96px;
   }
 
   .advantages__hand {
     padding-right: 0;
   }
 
+  .advantages__item--hand {
+    order: 2;
+  }
+
   .advantages__item--support {
-    width: 295px;
     order: 4;
   }
 
   .advantages__item--present {
-    width: 260px;
     order: 6;
   }
 
@@ -170,6 +161,10 @@
     padding-left: 224px;
   }
 
+  .advantages__item {
+    flex-basis: 350px;
+  }
+
   .advantages__title {
     font-size: 53px;
     line-height: 1.08;
@@ -177,5 +172,25 @@
 
   .advantages {
     margin-bottom: 41px;
+  }
+
+  .advantages__item--eco {
+    padding-right: 130px;
+  }
+
+  .advantages__item--price {
+    padding-right: 90px;
+  }
+
+  .advantages__item--like {
+    padding-right: 110px;
+  }
+
+  .advantages__item--hand {
+    padding-right: 50px;
+  }
+
+  .advantages__item--present {
+    padding-right: 60px;
   }
 }

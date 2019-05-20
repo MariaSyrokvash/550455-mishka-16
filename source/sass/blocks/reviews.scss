@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 }
 
 .reviews::after {
@@ -11,7 +11,7 @@
   padding: 0;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-size: 319px 100%;
+  background-size: 333px 100%;
 }
 
 .reviews__title {
@@ -108,7 +108,7 @@
   text-transform: uppercase;
   display: block;
   padding-top: 16px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   font-weight: bold;
   margin-bottom: 45px;
 }
@@ -125,7 +125,7 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
-    padding-top: 77px;
+    padding-top: 80px;
     padding-bottom: 46px;
 
     @media #{$retina} {
@@ -138,7 +138,7 @@
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 
   .reviews__list {
@@ -201,8 +201,8 @@
   }
 
   .reviews__inner {
-    padding-left: 221px;
-    padding-top: 72px;
+    padding-left: 224px;
+    padding-top: 75px;
     padding-bottom: 92px;
     background-size: 350px auto;
     background-position-x: 50px;

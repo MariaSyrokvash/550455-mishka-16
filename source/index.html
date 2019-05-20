@@ -7,12 +7,9 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page">
-    <!-- <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div> -->
     <svg style="display:none">
-      <symbol viewBox="0 0 18 18" id="icon-search">
-        <path d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0 0 14.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 0 0 1.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1 1 11 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z"/>
+      <symbol viewBox="-0.8 -0.8 17.6 17.6" id="icon-search">
+        <path xmlns="http://www.w3.org/2000/svg" d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0 0 14.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 0 0 1.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1 1 11 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z"/>
       </symbol>
       <symbol viewBox="0 0 21 18" id="icon-basket">
         <path d="M19.54,7.23H16.39L13,.41a.76.76,0,0,0-1-.33.75.75,0,0,0-.33,1l3.07,6.14H5.58L8.65,1.09A.75.75,0,0,0,7.31.41L3.9,7.23H.75a.75.75,0,0,0,0,1.5H.91l.85,3a.76.76,0,0,0-.31.6.74.74,0,0,0,.7.73l1.65,5.8H16.5l1.65-5.8a.74.74,0,0,0,.7-.73.76.76,0,0,0-.31-.6l.85-3h.16a.75.75,0,1,0,0-1.5ZM15.36,17.35H4.93L3.71,13.07H16.59ZM17,11.57H3.28L2.47,8.73H17.83Z"/>
@@ -189,20 +186,21 @@
       </section>
       <section class="contacts">
         <div class="contacts__inner container">
-          <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__wrapper">
-            <ul class="contacts__list list">
-              <li class="contacts__item">
-                <span class="contacts__name">e-mail:</span>
-                <a href="mailto:info@mimimishkashop.ru" class="contacts__link">info@mimimishkashop.ru</a>
-              </li>
-              <li class="contacts__item">
-                <span class="contacts__name">адрес:</span>
-                <p class="contacts__text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
-              </li>
-            </ul>
+          <div class="contacts__info">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__wrapper">
+              <ul class="contacts__list list">
+                <li class="contacts__item">
+                  <span class="contacts__name">e-mail:</span>
+                  <a href="mailto:info@mimimishkashop.ru" class="contacts__link">info@mimimishkashop.ru</a>
+                </li>
+                <li class="contacts__item">
+                  <span class="contacts__name">адрес:</span>
+                  <p class="contacts__text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
           <div class="map">
             <div class="map__img-wrapper">
               <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.7599874514076!2d30.322424123031617!3d59.93612472255699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1557678608516!5m2!1sru!2sby" width="600" height="450" style="border:0" allowfullscreen></iframe>
@@ -215,10 +213,11 @@
                 <img class="map__img"src="img/map-mobile@1x.jpg" alt="Карта" srcset="img/map-mobile@2x.jpg 2x">
               </picture> -->
             </div>
-            <div class="writeus-inner">
-              <a class="writeus-inner__btn btn" href="writeus.html">Напишите нам</a>
-            </div>
           </div>
+          <div class="writeus-inner">
+            <a class="writeus-inner__btn btn" href="writeus.html">Напишите нам</a>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -252,5 +251,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script sec="js/picturefill.min.js"></script>
   </body>
 </html>
