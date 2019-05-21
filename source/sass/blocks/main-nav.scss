@@ -20,7 +20,7 @@
 }
 
 .main-nav--nojs {
-  .main-nav__toggle{
+  .main-nav__toggle {
     display: none;
   }
 }
@@ -125,17 +125,6 @@
   position: absolute;
   fill: #d3d2d2;
 }
-
-// .link-icon__basket:hover {
-//   fill: $seafoam-blue;
-//   opacity: 1;
-// }
-
-// .link-icon__basket:active {
-//   fill: $seafoam-blue;
-//   opacity: 0.3;
-// }
-
 
 .main-nav__item--search:hover svg {
   fill: #63d1bb;
@@ -260,7 +249,7 @@
   .link-icon__search {
     left: 0;
     position: relative;
-    margin: auto
+    margin: auto;
   }
 
   .link-icon__basket {

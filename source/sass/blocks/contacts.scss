@@ -59,10 +59,14 @@
   margin-bottom: 36px;
 }
 
+.map__img-wrapper.container {
+  padding: 0;
+}
+
 .map__img {
   display: block;
-  // width: 322px;
-  width: 260px;
+  width: 320px;
+  border: 0;
   height: 457px;
   margin: 0 auto;
 }
@@ -74,7 +78,7 @@
   width: 67px;
   height: 100px;
   top: 143px;
-  left: 108px;
+  left: 138px;
 }
 
 .writeus-inner {
@@ -157,9 +161,9 @@
   }
 
   .map__img {
-    // width: 768px;
+    width: 768px;
     height: 457px;
-    width: 670px;
+    // width: 670px;
   }
 
   .map__img-wrapper {
@@ -172,8 +176,8 @@
   }
 
   .map::after {
-    top: 142px;
-    left: 313px;
+    top: 136px;
+    left: 362px;
   }
 }
 
@@ -182,38 +186,52 @@
     margin-bottom: 104px;
   }
 
+  .contacts__inner {
+    position: relative;
+    padding-top: 69px;
+    padding-right: 0;
+    padding-left: 168px;
+    margin-left: 0;
+    width: 550px;
+  }
+
   .contacts__list {
     flex-direction: column;
   }
 
+  .contacts__item {
+    margin-bottom: 30px;
+  }
+
   .map {
-    position: absolute;
-    top: 0;
-    right: 50px;
+    width: 525px;
+    height: 457px;
   }
 
   .map__img {
     width: 525px;
     height: 457px;
-  }
-
-  .contacts__inner {
-    padding-top: 81px;
-    padding-right: 50px;
-    padding-left: 223px;
-    margin-bottom: 53px;
+    margin: 0;
   }
 
   .contacts__title {
     font-size: 53px;
     line-height: 1.08;
-    margin-bottom: 47px;
+    margin-bottom: 51px;
   }
 
-  .map__img-wrapper {
-    // position: absolute;
-    // bottom: -54px;
-    // right: 50px;
+  .wrapper {
+    width: 1150px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 12px;
+  }
+
+  .map__img-wrapper.container {
+    width: 525px;
+    height: 457px;
+    position: relative;
   }
 
   .contacts__name {
@@ -221,13 +239,14 @@
   }
 
   .contacts__inner::before {
-    left: 113px;
-    top: 72px;
+    left: 64px;
+    top: 62px;
   }
 
   .writeus-inner__btn {
     margin: 0;
-    // margin-left: 225px;
+    margin-top: -52px;
+    margin-left: 176px;
   }
 
   .contacts__wrapper {

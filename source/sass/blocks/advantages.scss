@@ -155,10 +155,11 @@
 
 @media (min-width: $desktop-width) {
   .advantages__inner {
-    padding-top: 0;
-    padding-right: 100px;
-    padding-bottom: 0;
-    padding-left: 224px;
+    padding: 0 50px;
+  }
+
+  .advantages__list {
+    margin-left: 176px;
   }
 
   .advantages__item {
@@ -168,6 +169,7 @@
   .advantages__title {
     font-size: 53px;
     line-height: 1.08;
+    margin-left: 169px;
   }
 
   .advantages {
@@ -175,7 +177,7 @@
   }
 
   .advantages__item--eco {
-    padding-right: 130px;
+    flex-basis: 342px;
   }
 
   .advantages__item--price {

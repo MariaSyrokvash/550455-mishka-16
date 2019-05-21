@@ -220,10 +220,6 @@
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 0;
-  }
-
-  .features__list {
     margin-bottom: 53px;
   }
 
@@ -319,13 +315,14 @@
   .features__list {
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 58px;
+    margin-bottom: 53px;
   }
 
   .features__item {
     flex-direction: column;
     flex-basis: 316px;
     margin-right: 50px;
+    margin-bottom: 0;
   }
 
   .features__item:last-child {
@@ -343,6 +340,14 @@
 
   .features__description {
     width: 316px;
-    // height: 197px;
+  }
+
+  .features__price {
+    padding-top: 37px;
+  }
+
+  .features__btn {
+    right: -2px;
+    bottom: -1px;
   }
 }

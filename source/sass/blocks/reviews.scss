@@ -54,7 +54,6 @@
   margin-bottom: 38px;
 }
 
-
 .reviews__prev {
   background-image: url("../img/icon-left-arrow.svg");
   width: 130px;
@@ -115,7 +114,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    margin-bottom: 56px;
+    margin-bottom: 59px;
   }
 
   .reviews__inner {
@@ -194,6 +193,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    margin-bottom: 52px;
+  }
+
   .reviews__title {
     flex-basis: 480px;
     font-size: 53px;
