@@ -21,11 +21,11 @@
   flex-grow: 1;
 }
 
-.features__item:hover {
+.features__description:hover {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.features__item:active {
+.features__description:active {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
